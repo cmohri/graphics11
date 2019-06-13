@@ -192,11 +192,7 @@ def run(filename):
                 display(screen)
             elif c == 'save':
                 save_extension(screen, args[0])
-        '''
-        Ivan Zhang taught me how to fix the glitchiness / naming error. The next two lines were inspired by his approach, which
-        I thought was clever and the best way to fix the error. Alternatively, you could get the corresponding powers of 10, but
-        his approach is easier to implement. Also, changing the delay speed was his idea as well.
-        '''
+       
         diff = len(str(num_frames)) - len(str(counter))
         add_string = name + "0" * diff + str(counter) + '.gif'
 
